@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grouping Tags</title>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           background-color: gray; 
+           margin: 0;
+        }
+        header {
+            background-color: rgb(239, 244, 246);
+            padding: 10px;
+            margin: 10px; 
+        }
+        nav {
+            background-color: rgb(64, 65, 65);
+            padding: 3px;
+            box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(145, 219, 156);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px; 
+            border-radius: 20px;
+            box-shadow: 4px 9px 10px rgba(0, 0, 0, 0.477);
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            margin: 5px; 
+        }
+        article > aside {
+            background-color: rgb(105, 105, 103);
+            padding: 10px;
+        }
+        footer {
+            background-color: rgb(0, 9, 12);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px; 
+        }
+        footer > p {
+            margin: 0;
+        }
+        div#bola {
+            width: 50px;
+            height: 50px;;
+            border-radius: 50%;
+            margin: 10px;
+            background-color: rgb(226, 214, 214)
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+        <article>
+            <h2>Noticia sobre Tecnologia</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <aside>
+                <p>Artigo escrito por...</p>
+            </aside>
+        </article>
+        </section>   
+    </main>
+    <footer>
+        <p>Desenvolvendo pelo Cursoemvideo</p>
+    </footer>
+    <div id="bola"></div>
 </body>
 </html>
